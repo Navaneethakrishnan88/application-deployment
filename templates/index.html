@@ -1,7 +1,58 @@
-<form method="POST" action="">
-    Name <input type="text" name="name" />
-    <br>
-    Email <input type="email" name="email" />
-    <br>
-    <input type="submit">
-  </form>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Registration Form</title>
+    <style>
+        body {
+            background-image: url("path/to/your/image.jpg");
+            background-size: cover;
+        }
+
+        /* Additional CSS styles for your form */
+        form {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 100px auto;
+            width: 300px;
+        }
+
+        /* CSS styles for form elements */
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #337ab7;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form method="POST" action="">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required>
+        <br>
+        <label for="mobile">Mobile:</label>
+        <input type="text" name="Mobile" id="mobile" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+        <br>
+        <input type="submit">
+    </form>
+</body>
+</html>
