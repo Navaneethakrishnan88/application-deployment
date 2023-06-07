@@ -21,9 +21,10 @@ def index():
         # Fetch form data
         userDetails = request.form
         name = userDetails['name']
+        mobile = userDetails['mobile']
         email = userDetails['email']
         cur = mysql.connection.cursor()
-        cur.execute("INSERT INTO users(name, email) VALUES(%s, %s)",(name, email))
+        cur.execute("INSERT INTO users(name, mobile, email) VALUES(%s, %s, %s)",(name, mobile, email))
         mysql.connection.commit()
         cur.close()
         return 'success'
